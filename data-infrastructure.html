@@ -10,26 +10,30 @@
 
 <div class="brandbar">
   <div class="wrap">
-    <a href="index.html" class="wordmark">AAIPR <span>Policy Review</span></a>
+    <a href="index.html" class="wordmark"><img src="logo.png" alt="African A.I. Policy Review" class="logo-img"></a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="navlinks">
       <a href="index.html">Home</a>
       <a href="cross-border-data-transfers.html">Cross-Border Transfers</a>
       <a href="data-infrastructure.html" class="active">Data Infrastructure</a>
       <a href="the-connection.html">The Connection</a>
-      <a href="nigeria-vs-kenya.html">Nigeria vs Kenya</a>
-      <a href="next-project.html" class="minor">Next Project</a>
+      <a href="cross-border-recommendations.html">Cross-Border Recs</a>
+      <a href="environmental-recommendations.html">Environmental Recs</a>
       <a href="glossary.html" class="minor">Glossary</a>
       <a href="references.html" class="minor">References</a>
+      <a href="project-scope.html" class="minor">Project Scope</a>
     </nav>
   </div>
 </div>
 
 <header class="page-hero">
   <div class="wrap">
-    <div class="eyebrow">Concept 02</div>
+    <div class="icon-badge" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.25);">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#E7B8FA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="6" rx="1"/><rect x="4" y="15" width="16" height="6" rx="1"/><circle cx="7.5" cy="6" r="0.8" fill="#E7B8FA" stroke="none"/><circle cx="7.5" cy="18" r="0.8" fill="#E7B8FA" stroke="none"/></svg>
+    </div>
+    <div class="eyebrow">Physical Dimension</div>
     <h1>Data Infrastructure</h1>
-    <p class="dek">The physical layer of data centres, networks, and power that decides whether data can actually move — and where it can stay.</p>
+    <p class="dek">The physical layer of data centres, networks, and constraints that decides whether data can actually move — and where it can stay.</p>
   </div>
 </header>
 
@@ -42,61 +46,94 @@
     <div class="kicker"><span class="badge">1</span><span class="kicker-label">Overview</span></div>
     <h2 class="title">The layer beneath the law</h2>
     <div class="divider"></div>
-    <p class="lede">Every <a class="term" href="cross-border-data-transfers.html">cross-border data transfer</a> ultimately depends on physical infrastructure: somewhere for the data to be stored, a network to move it, and power to keep it all running. Africa's data-infrastructure footprint is growing fast, but it's still concentrated in a handful of hubs — and still constrained by real physical limits.</p>
+    <p class="lede">Every <a class="term" href="cross-border-data-transfers.html">cross-border data transfer</a> ultimately depends on physical infrastructure: somewhere for the data to be stored, a network to move it, and power to keep it all running. Africa's data-infrastructure footprint is growing fast, but it remains concentrated in a handful of hubs — and constrained by real physical, financial, and environmental limits.</p>
   </div>
 </section>
 
 <section class="block tint" id="data-centres">
   <div class="wrap">
-    <div class="kicker"><span class="badge">2</span><span class="kicker-label">Data Centres</span></div>
-    <h2 class="title">Where data actually lives</h2>
+    <div class="kicker"><span class="badge">2</span><span class="kicker-label">The Building Blocks</span></div>
+    <h2 class="title">Data centres, cloud, fibre, and IXPs</h2>
     <div class="divider"></div>
-    <p class="lede">A <a class="term" href="glossary.html#data-centre">data centre</a> is a physical facility built to store, process, and secure digital information — the buildings behind cloud services, online banking, government systems, mobile apps, and AI tools. Data-centre capacity is expanding across the continent, but growth remains concentrated in a few hubs, with Nigeria and Kenya among the leading markets.</p>
-    <h3 class="subtitle" id="cloud-services">Cloud services</h3>
-    <p class="lede">Most organisations don't run their own data centres — they rent capacity from <a class="term" href="glossary.html#cloud-services">cloud services</a>, which package storage and computing power as an on-demand service. This is often what actually triggers a cross-border transfer: choosing a cloud provider can mean choosing which country your data physically sits in.</p>
-  </div>
-</section>
-
-<section class="block" id="fibre">
-  <div class="wrap">
-    <div class="kicker"><span class="badge">3</span><span class="kicker-label">Connectivity</span></div>
-    <h2 class="title">The networks that carry the data</h2>
-    <div class="divider"></div>
-    <p class="lede">Data centres don't work alone — they depend on <a class="term" href="glossary.html#fibre">fibre networks</a> and submarine cables to move data efficiently between cities and continents, and on <a class="term" href="glossary.html#ixp" id="ixp">internet exchange points (IXPs)</a> to interconnect local networks without routing everything through an expensive international link.</p>
-    <p class="lede" id="connectivity">Carrier-neutral facilities and strong local interconnection reduce reliance on costly international routes and improve both speed and resilience — which is a big part of why "where is the nearest data centre" and "how good is local connectivity" are really the same question.</p>
-  </div>
-</section>
-
-<section class="block tint" id="power">
-  <div class="wrap">
-    <div class="kicker"><span class="badge">4</span><span class="kicker-label">Power &amp; Cooling</span></div>
-    <h2 class="title">The constraints that shape everything else</h2>
-    <div class="divider"></div>
-    <p class="lede">Data centres are power-hungry by design, and a stable <a class="term" href="glossary.html#power-supply">power supply</a> is one of the biggest factors determining where new capacity gets built. Running short of it means backup generation, higher operating costs, and less resilience.</p>
-    <p class="lede" id="cooling">Servers also generate heat that has to go somewhere. <a class="term" href="glossary.html#cooling">Cooling constraints</a> — the difficulty and expense of keeping equipment at a safe operating temperature in hot climates — directly affect how big a facility can get and how much it costs to run.</p>
-
-    <div class="constraints" style="margin-top:32px;">
-      <h4>Main constraints on African data infrastructure</h4>
-      <ul>
-        <li>Unreliable electricity</li>
-        <li>High cooling demands</li>
-        <li>Expensive construction and imported equipment</li>
-        <li>Weak inland fibre coverage in some areas</li>
-        <li>Shortages of specialised technical skills</li>
-      </ul>
+    <div class="infra-grid">
+      <div class="infra-card">
+        <h4>Data centres</h4>
+        <p>A <a class="term" href="glossary.html#data-centre">data centre</a> is a physical facility built to store, process, and secure digital information — the buildings behind cloud platforms, banking systems, government services, and AI tools. Capacity is expanding across the continent, but remains concentrated in a few hubs.</p>
+      </div>
+      <div class="infra-card">
+        <h4>Cloud services</h4>
+        <p>Most organisations rent capacity from <a class="term" href="glossary.html#cloud-services">cloud services</a> rather than running their own hardware. Choosing a cloud provider often decides which country your data physically sits in.</p>
+      </div>
+      <div class="infra-card">
+        <h4>Fibre networks</h4>
+        <p>Cabling — including submarine cables — carries data at high speed between cities, data centres, and continents. Weak inland fibre coverage remains a real bottleneck in several markets.</p>
+      </div>
+      <div class="infra-card">
+        <h4>Internet exchange points</h4>
+        <p>An <a class="term" href="glossary.html#ixp">internet exchange point (IXP)</a> lets local networks connect directly to each other, so local data doesn't have to take an expensive detour through an international route.</p>
+      </div>
     </div>
-    <p class="lede" style="margin-top:24px;">These challenges help explain why much African data is still hosted outside the continent, even as demand for local infrastructure keeps growing.</p>
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="constraints">
+  <div class="wrap">
+    <div class="kicker"><span class="badge">3</span><span class="kicker-label">Constraints, In Detail</span></div>
+    <h2 class="title">Eight things that limit what can be built</h2>
+    <div class="divider"></div>
+    <p class="lede">Tap each constraint to expand it.</p>
+
+    <div class="accordion">
+      <details open>
+        <summary><span><span class="num-tag">01</span>Electricity</span></summary>
+        <div class="acc-body">Data centres are power-hungry by design, and a stable <a class="term" href="glossary.html#power-supply">power supply</a> is one of the biggest factors determining where new capacity gets built. Unreliable grids mean expensive backup generation, higher operating costs, and lower resilience.</div>
+      </details>
+      <details>
+        <summary><span><span class="num-tag">02</span>Cooling</span></summary>
+        <div class="acc-body">Servers generate constant heat that has to go somewhere. <a class="term" href="glossary.html#cooling">Cooling constraints</a> — the difficulty and expense of keeping equipment at a safe operating temperature in hot climates — directly limit how large a facility can grow and how much it costs to run. See <a href="environmental-recommendations.html">Environmental Recommendations</a> for sustainable cooling strategies.</div>
+      </details>
+      <details>
+        <summary><span><span class="num-tag">03</span>Water</span></summary>
+        <div class="acc-body">Many cooling systems rely on water, which competes with agricultural and municipal needs in water-stressed regions. Water availability is increasingly treated as a site-selection factor, not an afterthought.</div>
+      </details>
+      <details>
+        <summary><span><span class="num-tag">04</span>Connectivity</span></summary>
+        <div class="acc-body">Carrier-neutral facilities and strong local interconnection through IXPs reduce reliance on costly international routes and improve both speed and resilience — connectivity quality is really the same question as "how close is the nearest data centre."</div>
+      </details>
+      <details>
+        <summary><span><span class="num-tag">05</span>Cost</span></summary>
+        <div class="acc-body">Construction and equipment are often imported and priced in foreign currency, making African data-centre builds disproportionately expensive relative to local costs of capital and operating margins.</div>
+      </details>
+      <details>
+        <summary><span><span class="num-tag">06</span>Land &amp; zoning</span></summary>
+        <div class="acc-body">Suitable land needs the right zoning, proximity to power and fibre, and clear title — a slower and more uncertain process in many markets than the technical build itself.</div>
+      </details>
+      <details>
+        <summary><span><span class="num-tag">07</span>Technical skills</span></summary>
+        <div class="acc-body">Specialised roles — data-centre engineers, network operators, cooling technicians — are in short supply in several markets, slowing both construction and ongoing operations.</div>
+      </details>
+      <details>
+        <summary><span><span class="num-tag">08</span>Environmental exposure</span></summary>
+        <div class="acc-body">Flood risk, extreme heat, and climate volatility all affect where a facility can safely and sustainably operate over its lifetime. See <a href="environmental-recommendations.html">Environmental Recommendations</a> for full site-selection criteria.</div>
+      </details>
+    </div>
+
+    <p class="lede" style="margin-top:24px;">These constraints, taken together, help explain why much African data is still hosted outside the continent even as demand for local infrastructure keeps growing.</p>
+
+    <div class="footnote-link">
+      🌍 For a practical guide to choosing and building sustainable data-centre sites, see <a href="environmental-recommendations.html">Environmental Recommendations for Data Centres →</a>
+    </div>
+  </div>
+</section>
+
+<section class="block tint">
   <div class="wrap">
     <div class="related">
       <h5>Related Topics</h5>
       <div class="related-links">
         <a href="cross-border-data-transfers.html">Cross-Border Data Transfers</a>
         <a href="the-connection.html">The Connection Between Them</a>
-        <a href="nigeria-vs-kenya.html">Nigeria vs Kenya</a>
+        <a href="environmental-recommendations.html">Environmental Recommendations</a>
         <a href="glossary.html">Glossary of Terms</a>
       </div>
     </div>
@@ -108,22 +145,23 @@
     <div class="foot-top">
       <div>
         <div class="foot-brand">African A.I. Policy Review</div>
-        <div class="foot-meta">Cross-Border Data Transfers &amp; African Data Infrastructure — an educational microsite on Africa's digital governance.</div>
+        <div class="foot-meta">Cross-Border Data Transfers &amp; African Data Infrastructure — a research microsite on the legal, infrastructural, and environmental dimensions of data in Africa.</div>
       </div>
       <nav class="foot-nav">
         <a href="index.html">Home</a>
         <a href="cross-border-data-transfers.html">Cross-Border Transfers</a>
         <a href="data-infrastructure.html">Data Infrastructure</a>
         <a href="the-connection.html">The Connection</a>
-        <a href="nigeria-vs-kenya.html">Nigeria vs Kenya</a>
-        <a href="next-project.html">Next Project</a>
+        <a href="cross-border-recommendations.html">Cross-Border Recs</a>
+        <a href="environmental-recommendations.html">Environmental Recs</a>
         <a href="glossary.html">Glossary</a>
         <a href="references.html">References</a>
+        <a href="project-scope.html">Project Scope</a>
       </nav>
     </div>
     <div class="foot-bottom">
-      <span>African A.I. Policy Review — Policy Brief Series</span>
-      <span>Phase 1 of an ongoing comparative study</span>
+      <span>African A.I. Policy Review — Research Microsite</span>
+      <span><a href="project-scope.html" style="color:var(--ink-soft);">Project scope &amp; methodology →</a></span>
     </div>
   </div>
 </footer>

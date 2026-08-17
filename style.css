@@ -33,13 +33,15 @@ img,svg{display:block; max-width:100%;}
 .brandbar .wrap{display:flex; align-items:center; justify-content:space-between; height:64px;}
 .wordmark{
   font-family:'Playfair Display',serif; font-weight:700; font-size:19px; letter-spacing:0.02em;
-  color:var(--purple-ink); display:flex; align-items:baseline; gap:8px; text-decoration:none;
+  color:var(--purple-ink); display:flex; align-items:center; gap:8px; text-decoration:none;
 }
 .wordmark span{
   font-family:'Inter',sans-serif; font-weight:600; font-size:10.5px; letter-spacing:0.14em;
   color:var(--purple); text-transform:uppercase; border-left:1px solid var(--line); padding-left:8px;
 }
-.navlinks{display:flex; align-items:center; gap:22px; font-size:13px; font-weight:600; color:var(--ink-soft);}
+.wordmark .logo-img{ height:34px; width:auto; display:block; }
+@media (max-width:420px){ .wordmark .logo-img{ height:28px; } }
+.navlinks{display:flex; align-items:center; gap:17px; font-size:12.5px; font-weight:600; color:var(--ink-soft);}
 .navlinks a{color:var(--ink-soft); text-decoration:none; letter-spacing:0.01em; padding:6px 0; border-bottom:2px solid transparent;}
 .navlinks a:hover{color:var(--purple);}
 .navlinks a.active{color:var(--purple); border-bottom-color:var(--gold);}
@@ -48,7 +50,7 @@ img,svg{display:block; max-width:100%;}
   display:none; background:none; border:none; cursor:pointer; padding:8px; margin-right:-8px;
 }
 .nav-toggle span{display:block; width:22px; height:2px; background:var(--purple-ink); margin:4px 0; border-radius:2px;}
-@media (max-width:900px){
+@media (max-width:1100px){
   .navlinks{
     position:fixed; top:64px; left:0; right:0; bottom:0;
     background:var(--paper); flex-direction:column; align-items:flex-start;
@@ -259,6 +261,66 @@ footer .foot-top{display:flex; justify-content:space-between; align-items:flex-s
 
 /* ---------- misc ---------- */
 .pill{display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--purple); background:var(--lav-tint-2); padding:5px 11px; border-radius:100px; margin-bottom:10px;}
+/* ---------- icon badges (law / infrastructure / environment / connectivity) ---------- */
+.icon-badge{
+  width:44px; height:44px; border-radius:50%; background:var(--lav-tint-2); border:1px solid var(--line);
+  display:flex; align-items:center; justify-content:center; flex:none; margin-bottom:14px;
+}
+.icon-badge svg{width:20px; height:20px; stroke:var(--purple);}
+.icon-row{display:flex; align-items:center; gap:14px; margin-bottom:10px;}
+.icon-row .icon-badge{margin-bottom:0;}
+
+/* ---------- data table ---------- */
+.table-scroll{overflow-x:auto; margin-top:28px; border-radius:14px; border:1px solid var(--line); background:#fff;}
+table.data-table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:720px;}
+table.data-table th{
+  background:var(--purple-ink); color:#F1E1F7; text-align:left; padding:14px 16px; font-weight:600;
+  font-size:12px; letter-spacing:0.04em; text-transform:uppercase; white-space:nowrap;
+}
+table.data-table td{padding:16px; border-top:1px solid var(--line); color:var(--ink-soft); line-height:1.6; vertical-align:top;}
+table.data-table tr:nth-child(even) td{background:var(--lav-tint);}
+table.data-table td strong{color:var(--purple-ink); font-weight:700;}
+.table-note{font-size:12.5px; color:var(--ink-soft); margin-top:10px; font-style:italic;}
+
+/* ---------- accordion (native details/summary) ---------- */
+.accordion{margin-top:28px; display:flex; flex-direction:column; gap:12px;}
+.accordion details{
+  background:#fff; border:1px solid var(--line); border-radius:14px; padding:0; overflow:hidden;
+}
+.accordion summary{
+  cursor:pointer; list-style:none; padding:18px 22px; font-family:'Playfair Display',serif; font-weight:700;
+  font-size:16px; color:var(--purple-ink); display:flex; align-items:center; justify-content:space-between; gap:12px;
+}
+.accordion summary::-webkit-details-marker{display:none;}
+.accordion summary::after{
+  content:"+"; font-family:'Inter',sans-serif; font-weight:700; font-size:20px; color:var(--purple); flex:none;
+  transition:transform 0.2s ease;
+}
+.accordion details[open] summary::after{transform:rotate(45deg);}
+.accordion summary .num-tag{
+  font-family:'Inter',sans-serif; font-weight:700; font-size:11px; color:var(--purple); background:var(--lav-tint-2);
+  border-radius:100px; padding:3px 9px; margin-right:10px; letter-spacing:0.04em;
+}
+.accordion .acc-body{padding:0 22px 20px; font-size:14.5px; line-height:1.7; color:var(--ink-soft);}
+
+/* ---------- recommendation cards ---------- */
+.rec-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:32px;}
+@media (max-width:760px){.rec-grid{grid-template-columns:1fr;}}
+.rec-card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:24px 24px;}
+.rec-card .rec-num{
+  width:32px; height:32px; border-radius:50%; background:var(--purple); color:#fff; font-family:'Playfair Display',serif;
+  font-weight:700; font-size:14px; display:flex; align-items:center; justify-content:center; margin-bottom:14px;
+}
+.rec-card h4{margin:0 0 8px; font-size:16.5px; color:var(--purple-ink); font-family:'Playfair Display',serif;}
+.rec-card p{margin:0; font-size:14px; line-height:1.7; color:var(--ink-soft);}
+
+/* ---------- footnote / cross-link callout ---------- */
+.footnote-link{
+  margin-top:28px; background:var(--lav-tint-2); border-radius:14px; padding:18px 22px; font-size:14px;
+  color:var(--purple-ink); display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+}
+.footnote-link a{font-weight:700; color:var(--purple); text-decoration:none; border-bottom:1px dotted var(--purple);}
+
 ::selection{background:var(--purple); color:#fff;}
 :focus-visible{outline:2px solid var(--purple); outline-offset:3px;}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}}
