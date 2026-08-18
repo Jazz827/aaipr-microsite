@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Selection Scorecard | AAIPR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="brandbar">
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><img src="logo.png" alt="African A.I. Policy Review" class="logo-img"></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="why-data-centres-matter.html">Why It Matters</a>
+      <a href="site-selection-scorecard.html" class="active">Site Selection</a>
+      <a href="african-market-overview.html">Market Overview</a>
+      <a href="country-profiles.html">Country Profiles</a>
+      <a href="cross-border-data-transfers.html">Cross-Border Transfers</a>
+      <a href="environmental-infrastructure-factors.html">Environmental Factors</a>
+      <a href="stakeholder-impact.html">Stakeholder Impact</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="glossary.html" class="minor">Glossary</a>
+      <a href="references.html" class="minor">References</a>
+    </nav>
+  </div>
+</div>
+
+<header class="page-hero">
+  <div class="wrap">
+    <div class="icon-badge" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.25);"><svg viewBox="0 0 24 24" fill="none" stroke="#E7B8FA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></div>
+    <div class="eyebrow">Framework</div>
+    <h1>Site Selection Scorecard</h1>
+    <p class="dek">A practical framework for evaluating a data-centre site — core criteria first, technical metrics second.</p>
+  </div>
+</header>
+
+<div class="wrap breadcrumb">
+  <a href="index.html">Home</a><span class="sep">/</span><span class="current">Site Selection Scorecard</span>
+</div>
+
+<section class="block first">
+  <div class="wrap">
+    <div class="kicker"><span class="badge">1</span><span class="kicker-label">How To Use This</span></div>
+    <h2 class="title">A practical evaluation framework</h2>
+    <div class="divider"></div>
+    <p class="lede">Choosing a data-centre site means weighing a fixed set of factors against each other — no single criterion decides it alone. The scorecard below groups the core siting criteria first, then the technical metrics that determine whether a promising site can actually support the intended <a class="term" href="glossary.html#it-load">IT load</a>.</p>
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="wrap">
+    <div class="kicker"><span class="badge">2</span><span class="kicker-label">Core Siting Criteria</span></div>
+    <h2 class="title">What to evaluate first</h2>
+    <div class="divider"></div>
+    <div class="scorecard-grid">
+      <div class="scorecard-item"><div class="sc-text"><h4>Power reliability</h4><p>Grid stability and available capacity — outside South Africa, grid reliability often runs below 60%, pushing facilities toward continuous rather than standby backup generation.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Fibre connectivity</h4><p>Proximity to fibre routes and an internet exchange point reduces both latency and the cost of building additional connectivity infrastructure.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Land availability</h4><p>Suitable land with clear title and appropriate zoning, ideally already close to power and fibre corridors.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Water access</h4><p>Availability for cooling systems, weighed against local water stress — a growing factor in site decisions, not an afterthought.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Climate risk</h4><p>Flood exposure, extreme heat frequency, and longer-term climate trends that affect cooling load and structural risk.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Permitting</h4><p>Zoning approval, environmental permitting, and utility interconnection timelines — often the least predictable part of a project schedule.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Grid resilience</h4><p>Redundant substations or feeders serving the site, reducing single points of failure in the power supply chain.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Logistics</h4><p>Road access for construction and equipment delivery, and proximity to a skilled labour pool for both build and operations.</p></div><span class="sc-tag core">Core</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4>Expansion potential</h4><p>Room to grow on the same site or campus — sizing land and power capacity for future phases, not just the first build.</p></div><span class="sc-tag core">Core</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="technical-metrics">
+  <div class="wrap">
+    <div class="kicker"><span class="badge">3</span><span class="kicker-label">Technical Metrics</span></div>
+    <h2 class="title">What determines feasibility on paper</h2>
+    <div class="divider"></div>
+    <div class="scorecard-grid">
+      <div class="scorecard-item"><div class="sc-text"><h4><a class="term" href="glossary.html#it-load">IT load</a></h4><p>The actual power draw of computing equipment the site needs to support — the number that everything else (power, cooling) is sized against.</p></div><span class="sc-tag technical">Technical</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4><a class="term" href="glossary.html#redundancy">Redundancy</a></h4><p>Backup capacity for power and cooling systems, described using industry tiers — see <a class="term" href="glossary.html#tier">Tier III / Tier IV</a> in the Glossary.</p></div><span class="sc-tag technical">Technical</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4><a class="term" href="glossary.html#utility-interconnection">Utility interconnection</a></h4><p>The technical and contractual process of connecting the facility to the grid at the required capacity — often a long-lead-time item.</p></div><span class="sc-tag technical">Technical</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4><a class="term" href="glossary.html#mep">MEP readiness</a></h4><p>Mechanical, electrical, and plumbing systems design — whether local contractors and supply chains can actually deliver and maintain what's specified.</p></div><span class="sc-tag technical">Technical</span></div>
+      <div class="scorecard-item"><div class="sc-text"><h4><a class="term" href="glossary.html#phased-build-out">Phased build-out</a></h4><p>Building capacity in stages that match realistic demand growth, rather than committing to full capacity — and full cost — on day one.</p></div><span class="sc-tag technical">Technical</span></div>
+    </div>
+
+    <div class="takeaway">
+      <strong>How To Read This</strong>
+      No African market outside South Africa currently scores "strong" across every core criterion — that's normal, not disqualifying. The scorecard is a way to compare trade-offs between sites and markets, not a pass/fail test. See <a href="country-profiles.html" style="color:#E7B8FA;">Country Profiles</a> for how these criteria play out in practice.
+    </div>
+  </div>
+</section>
+
+<section class="block tint">
+  <div class="wrap">
+    <div class="related">
+      <h5>Related Topics</h5>
+      <div class="related-links">
+        <a href="country-profiles.html">Country Profiles</a>
+        <a href="environmental-infrastructure-factors.html">Environmental &amp; Infrastructure Factors</a>
+        <a href="glossary.html">Glossary of Terms</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">African A.I. Policy Review</div>
+        <div class="foot-meta">Data Centres, Site Selection &amp; Cross-Border Data Transfers in Africa — a research microsite on infrastructure, policy, and investment.</div>
+      </div>
+      <nav class="foot-nav">
+        <a href="index.html">Home</a>
+        <a href="why-data-centres-matter.html">Why It Matters</a>
+        <a href="site-selection-scorecard.html">Site Selection</a>
+        <a href="african-market-overview.html">Market Overview</a>
+        <a href="country-profiles.html">Country Profiles</a>
+        <a href="cross-border-data-transfers.html">Cross-Border Transfers</a>
+        <a href="environmental-infrastructure-factors.html">Environmental Factors</a>
+        <a href="stakeholder-impact.html">Stakeholder Impact</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="glossary.html">Glossary</a>
+        <a href="references.html">References</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>African A.I. Policy Review — Research Microsite</span>
+      <span>Policy · Infrastructure · Investment</span>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
